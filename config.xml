@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.emeelan.mastjod" version="1.0.1" android-versionCode="1001" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>mast</name>
+    <description>Sample Apache Cordova App</description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <platform name="android">
+        <!-- Icons -->
+        <icon src="resources/icons/drawable-mdpi/logo.png" density="mdpi" />
+        <icon src="resources/icons/drawable-hdpi/logo.png" density="hdpi" />
+        <icon src="resources/icons/drawable-xhdpi/logo.png" density="xhdpi" />
+        <icon src="resources/icons/drawable-xxhdpi/logo.png" density="xxhdpi" />
+        <icon src="resources/icons/drawable-xxxhdpi/logo.png" density="xxxhdpi" />
+        
+        <!-- Permissions -->
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.INTERNET" />
+        </config-file>
+    </platform>
+    
+    <!-- Intents -->
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+</widget>

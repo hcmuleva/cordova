@@ -6,7 +6,9 @@
  4. cordova build android --release
  5. Generate keytool
     keytool -genkey -v -keystore emeelanmast -alias emeelanmast -keyalg RSA -keysize 2048 -validity 10004
- 6. zipalign -v 4 app-release.aab emeelanmast
 
- 7. It will require some std size of images.
- 8. 
+  6. jarsigner -verbose -sigalg SHA256withRSA -digestalg SHA-256 -keystore emeelanmast.keystore /Users/harishmuleva/projects/social/emeelanrefactor/release/emeelanmast/platforms/android/app/build/outputs/bundle/release/app-release.aab emeelanmast
+ 7. zipalign -v 4 app-release.aab emeelanmast
+
+ 8. It will require some std size of images.
+ 9. 
